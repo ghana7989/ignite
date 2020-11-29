@@ -1,11 +1,20 @@
+import React from "react";
+//Components and pages
+import Home from "./pages/Home";
+import Nav from "./components/Nav";
+//Styles
+import GlobalStyles from "./components/GlobalStyles";
+//Router
+import { Route } from "react-router-dom";
 
 function App() {
-
-  console.log(process.env.PUBLIC_URL)
-  
   return (
     <div className="App">
-      <h1>HI ignite</h1>
+      <GlobalStyles />
+      <Nav />
+      <Route path={["/game/:id", "/"]}>
+        <Home />
+      </Route>
     </div>
   );
 }
