@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <Nav />
-      <Route path={[`${process.env.PUBLIC_URL}/game/:id`, `${process.env.PUBLIC_URL}/`]}>
+      <Route path={[`/game/:id`, `/`]}>
         <Home />
       </Route>
     </div>
