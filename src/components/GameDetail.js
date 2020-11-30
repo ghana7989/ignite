@@ -25,7 +25,7 @@ const GameDetail = ({ pathId }) => {
     const element = e.target;
     if (element.classList.contains("shadow")) {
       document.body.style.overflow = "auto";
-      history.push("/");
+      history.push(`${process.env.PUBLIC_URL}/`);
     }
   };
   //Get Stars
